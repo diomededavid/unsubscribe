@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i,900");
+
+/* Since we already have the variables in the custom css file we do not need. Only for the purpose of preview*/
+:root {
+  --rich-grey: #a5acaf;
+  --surface: #293750;
+  --surface-light: #54617c;
+  --surface-dark: #001128;
+  --primary: #293750;
+  --accent: #82d654;
+  --accent-light: #d5f1c5;
+  --success: #82d654;
+  --danger: #3e485d;
+  --white: #eceffd;
+  --font-family-sans-serif: Nunito, "Helvetica Neue", sans-serif;
+  --white-12-opacity: rgba(255, 255, 255, 0.12);
+  --xx-small: 375px;
+  --x-small: 400px;
+  --small: 600px;
+  --medium: 960px;
+  --tablet: 1024px;
+  --large: 1280px;
+  --x-large: 1920px;
+}
+
+body {
+  background: var(--surface-light);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.demo-card-wide.mdl-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto 40px auto;
+  padding: 40px;
+  border-radius: 5px !important;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-gap: 20px 40px;
+  background: white !important;
+  overflow: visible;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .demo-card-wide.mdl-card {
+     grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-columns: 1fr 40px 1fr !important;
+  }
+}
+
+.mdl-textfield {
+  position: relative;
+  font-size: 16px;
+  font-family: Nunito, var(--font-family-sans-serif) !important;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 100%;
+  margin: 0 0 0 16px !important;
+  padding: 20px 0;
+}
+
+.mdl-card__title,
+h2.mdl-card__title-text {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--surface-dark) !important;
+  font-family: var(--font-family-sans-serif);
+}
+
+.mdl-card__title {
+  padding: 0 !important;
+  display: -ms-grid !important;
+}
+
+.mdl-textfield__label:after {
+  font-family: Nunito, var(--font-family-sans-serif) !important;
+  background-color: var(--accent) !important;
+}
+
+.mdl-button--colored {
+  background: var(--surface) !important;
+}
+
+.float--right {
+  float: right;
+  clear:both;
+}
+
+.btn-pad-top {
+  margin-top: 40px
+}
+
+#box {
+ display: none; 
+}
